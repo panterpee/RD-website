@@ -1,0 +1,199 @@
+body {
+    margin: 0;
+}
+
+h1 {
+    font-family: Fantasy;
+    text-align: center;
+    margin-top: 30px;
+}
+
+hr {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    width: 25%;
+}
+
+/* Navigate bar */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 12px 27px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  li a.active {
+    background-color: #ff3b3b;
+  }
+
+/* .img {
+    max-width: 100%; 
+    height: auto; 
+} */
+
+.container {
+    display: flex;
+/* Make the container element behave like a table */
+    width: 100%; /* Set full-width to expand the whole page */
+    align-items: center;
+    justify-content: center !important;
+    /* padding-left: 4%; */
+
+    
+}
+
+.col-4 {
+ /* Make elements inside the container behave like table cells */
+    padding-bottom: 10px;
+    width: 90%;
+    height:500px;
+    margin: 10px;
+    margin-top: 20px;
+    border-radius: 25px
+    
+    
+    
+    
+}
+.col-4 p {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    
+}
+
+.col-4:hover {
+  scale: 1.1;
+  transition-duration: 0.8s;
+  transition-timing-function: ease-out;
+}
+
+.container a {
+    display:block ; /* Change display to block to make margin work */
+    margin-bottom: 15px; /* Add margin to the bottom */
+    text-decoration: none;
+    color: rgb(208, 0, 0);
+    margin-left: 20px;
+  
+
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    
+
+}
+
+.img img {
+  border-radius: 50px;
+  /* overflow: hidden; */
+}
+
+
+
+.filtermate {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(219, 219, 219);
+    justify-content: center !important;
+    
+}
+
+.Mini-ro{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(220, 220, 220);
+    justify-content: center !important;
+    
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+  }
+
+.flex-container > div {
+    margin : 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: #f1f1f1;
+    padding-bottom: 30px;
+    flex: 50%;
+    border-radius: 25px;
+}
+
+  
+
+ @media (max-width: 600px) {
+    .flex-container {
+      flex-direction: column;
+      flex: 100%;
+    }
+}
+
+
+
+.owl-carousel .owl-item img {
+      margin-top: 20px;
+      height: 380px;
+      width: auto;
+      max-width: 90%;
+      position: relative;
+}
+
+.owl-stage {
+  height: 550px;
+  margin-top: 20px;
+}
+
+
+.owl-prev span,.owl-next span{
+  font-size: 3rem;
+}
+
+.owl-prev{
+  position: absolute;
+  left: -3%;
+  top:50%;
+  transform: translateY(-50%)
+}
+
+.owl-next{
+  position: absolute;
+  right: -3%;
+  top:50%;
+  transform: translateY(-50%)
+}
+
