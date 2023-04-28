@@ -19,10 +19,10 @@ li {
 
 li a {
   display: block;
-  color: white;
+  color: white !important;
   text-align: center;
-  padding: 12px 40px;
-  text-decoration: none;
+  padding: 12px 40px !important;
+  text-decoration: none !important;
 }
 
 li a:hover:not(.active) {
