@@ -84,7 +84,7 @@ ul {
  /* Make elements inside the container behave like table cells */
     padding-bottom: 10px;
     width: 90%;
-    height:500px;
+    height:auto;
     margin: 10px;
     margin-top: 20px;
     border-radius: 25px;
@@ -136,7 +136,7 @@ ul {
 
 
 
-.filtermate {
+.img-bg{
     display: flex;
     flex-direction: column;
     background-image: linear-gradient(rgb(0, 96, 199), rgb(0, 0, 0));
@@ -144,21 +144,7 @@ ul {
     
 }
 
-.Mini-ro{
-    display: flex;
-    flex-direction: column;
-    background-image: linear-gradient(rgb(0, 96, 199), rgb(0, 0, 0));
-    justify-content: center !important;
-    
-}
 
-.flip{
-  display: flex;
-  flex-direction: column;
-  background-image: linear-gradient(rgb(0, 96, 199), rgb(0, 0, 0));
-  justify-content: center !important;
-  
-}
 
 * {
     box-sizing: border-box;
@@ -245,7 +231,7 @@ ul {
 
 .owl-carousel .owl-item img {
       margin-top: 20px;
-      height: 380px;
+      height: 350px;
       width: auto;
       max-width: 85%;
       position: relative;
