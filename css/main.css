@@ -1,12 +1,16 @@
 body {
     margin: 0;
+    background-image: url("https://res.cloudinary.com/practicaldev/image/fetch/s--BuPz-p40--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/nphrgz8yfnjylrwfr0yl.png");
 }
 
 h1 {
     font-family: Fantasy;
     text-align: center;
-    margin-top: 30px;
-    text-shadow: 4px 4px 2px  rgb(213, 213, 213);
+    margin-top: 40px;
+    /* text-shadow: 4px 4px 2px  rgb(213, 213, 213); */
+    background: -webkit-linear-gradient(#c1c1c1, rgb(0, 123, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 hr {
@@ -14,7 +18,7 @@ hr {
     margin-bottom: 15px;
     margin-left: auto;
     margin-right: auto;
-    border: 1px solid black;
+    border: 1px solid rgb(255, 255, 255);
     width: 25%;
 }
 
@@ -23,30 +27,41 @@ hr {
 ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 15px 0px;
     overflow: hidden;
-    background-color: #333;
-
+    background-image: linear-gradient(rgb(0, 0, 0)100%, rgb(137, 0, 0));
+    display: flex;
+    text-align: center;
+    justify-content:center;
+    flex-wrap: wrap;
   }
   
   li {
-    float: left;
+    display: flex;
+    width: 400px;
+    text-align: center;
+    justify-content: center;
   }
   
   li a {
-    display: block;
     color: white;
     text-align: center;
-    padding: 12px 40px;
     text-decoration: none;
+    font-size: 20px;
+    width: 400px;
+    vertical-align: middle;
   }
   
   li a:hover:not(.active) {
-    background-color: #111;
+    font-size: 25px;
+    margin-top: -5px;
   }
   
   li a.active {
-    background-color: #ff3b3b;
+    color: #ffffff;
+    font-weight: bolder;
+    font-size: 25px;
+    margin-top: -5px;
   }
 
 /* .img {
@@ -72,7 +87,8 @@ ul {
     height:500px;
     margin: 10px;
     margin-top: 20px;
-    border-radius: 25px
+    border-radius: 25px;
+
     
     
     
@@ -82,20 +98,21 @@ ul {
     margin-top: 20px;
     margin-left: 20px;
     margin-bottom: 5px;
+    color: white;
     
 }
 
 .col-4:hover {
   scale: 1.1;
-  transition-duration: 0.8s;
+  transition-duration: 0.6s;
   transition-timing-function: ease-out;
 }
 
 .container a {
     display:block ; /* Change display to block to make margin work */
-    margin-bottom: 15px; /* Add margin to the bottom */
+    margin-bottom: 30px; /* Add margin to the bottom */
     text-decoration: none;
-    color: rgb(208, 0, 0);
+    color: rgb(255, 255, 255);
     margin-left: 20px;
   
 
@@ -107,6 +124,7 @@ ul {
     text-align: center;
     margin-top: 20px;
     margin-bottom: 10px;
+    
     
 
 }
@@ -121,7 +139,7 @@ ul {
 .filtermate {
     display: flex;
     flex-direction: column;
-    background-color: rgb(219, 219, 219);
+    background-image: linear-gradient(rgb(0, 96, 199), rgb(0, 0, 0));
     justify-content: center !important;
     
 }
@@ -129,9 +147,17 @@ ul {
 .Mini-ro{
     display: flex;
     flex-direction: column;
-    background-color: rgb(220, 220, 220);
+    background-image: linear-gradient(rgb(0, 96, 199), rgb(0, 0, 0));
     justify-content: center !important;
     
+}
+
+.flip{
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(rgb(0, 96, 199), rgb(0, 0, 0));
+  justify-content: center !important;
+  
 }
 
 * {
@@ -154,16 +180,66 @@ ul {
     background-color: #f1f1f1;
     padding-bottom: 30px;
     border-radius: 25px;
+    width: 90%;
 }
 
   
 
- @media (max-width: 600px) {
+ @media (max-width: 800px) {
     .flex-container {
       flex-direction: column;
       flex: 100%;
     }
+    li{
+      height: 50px;
+    }
+    li a{
+      margin-top: 5px;
+    }
+    li a.active {
+      border-bottom: solid white;
+    }
 }
+
+@media (min-width: 800px) {
+  .flex-container {
+    flex-direction: row;
+    flex: 100%;
+  }
+  li{
+    height: 50px;
+    width: 350px;
+  }
+  li a{
+    margin-top: 5px;
+  }
+  li a.active {
+    border-bottom: solid white;
+  }
+  .flex-container > div {
+    width: 30%;
+  }
+  
+}
+
+
+@media (max-width: 1200px) {
+  .flex-container {
+    flex-direction: row;
+    flex: 100%;
+  }
+  li{
+    height: 50px;
+    width: 300px;
+  }
+  li a{
+    margin-top: 5px;
+  }
+  li a.active {
+    border-bottom: solid white;
+  }
+}
+
 
 
 
@@ -171,8 +247,9 @@ ul {
       margin-top: 20px;
       height: 380px;
       width: auto;
-      max-width: 90%;
+      max-width: 85%;
       position: relative;
+      text-align: center;
 }
 
 .owl-stage {
@@ -182,14 +259,16 @@ ul {
 
 
 .owl-prev span,.owl-next span{
-  font-size: 3rem;
+  font-size: 5rem;
+  color: white;
 }
 
 .owl-prev{
   position: absolute;
   left: -3%;
   top:50%;
-  transform: translateY(-50%)
+  transform: translateY(-50%);
+  
 }
 
 .owl-next{
@@ -199,3 +278,6 @@ ul {
   transform: translateY(-50%)
 }
 
+.owl-item {
+  margin-right: 9.5px !important;
+}
